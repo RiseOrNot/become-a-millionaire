@@ -1,0 +1,21 @@
+.button {
+  border-radius: 12px;
+  width: 18.5rem;
+  height: 4rem;
+  background-color: var(--orange-100);
+  border: none;
+  font-weight: 600;
+  color: var(--white-100);
+  font-size: 1.25rem;
+  line-height: 116%;
+  cursor: pointer;
+  transition: background-color .2s ease-in-out;
+}
+
+.button:hover {
+  background-color: var(--orange-80);
+}
+
+.button:active {
+  background-color: var(--orange-120);
+}
