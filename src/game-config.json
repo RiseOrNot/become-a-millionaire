@@ -1,0 +1,270 @@
+{
+  "questions": [
+    {
+      "heading": "In the UK, the abbreviation NHS stands for National what Service?",
+      "answers": [
+        {
+          "variant": "Humanity",
+          "isCorrect": false
+        },
+        {
+          "variant": "Health",
+          "isCorrect": true
+        },
+        {
+          "variant": "Honour",
+          "isCorrect": false
+        },
+        {
+          "variant": "Household",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "heading": "Which Disney character famously leaves a glass slipper behind at a royal ball?",
+      "answers": [
+        {
+          "variant": "Pocahontas",
+          "isCorrect": false
+        },
+        {
+          "variant": "Sleeping Beauty",
+          "isCorrect": false
+        },
+        {
+          "variant": "Cinderella",
+          "isCorrect": true
+        },
+        {
+          "variant": "Elsa",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "heading": "Which of these brands was chiefly associated with the manufacture of household locks?",
+      "answers": [
+        {
+          "variant": "Phillips",
+          "isCorrect": false
+        },
+        {
+          "variant": "Flymo",
+          "isCorrect": false
+        },
+        {
+          "variant": "Chubb",
+          "isCorrect": true
+        },
+        {
+          "variant": "Ronseal",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "heading": "The hammer and sickle is one of the most recognisable symbols of which political ideology?",
+      "answers": [
+        {
+          "variant": "Republicanism",
+          "isCorrect": false
+        },
+        {
+          "variant": "Communism",
+          "isCorrect": true
+        },
+        {
+          "variant": "Conservatism",
+          "isCorrect": false
+        },
+        {
+          "variant": "Liberalism",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "heading": "Which toys have been marketed with the phrase “robots in disguise”?",
+      "answers": [
+        {
+          "variant": "Bratz Dolls",
+          "isCorrect": false
+        },
+        {
+          "variant": "Sylvanian Families",
+          "isCorrect": false
+        },
+        {
+          "variant": "Hatchimals",
+          "isCorrect": false
+        },
+        {
+          "variant": "Transformers",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "heading": "What does the word loquacious mean?",
+      "answers": [
+        {
+          "variant": "Angry",
+          "isCorrect": false
+        },
+        {
+          "variant": "Chatty",
+          "isCorrect": true
+        },
+        {
+          "variant": "Beautiful",
+          "isCorrect": false
+        },
+        {
+          "variant": "Shy",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "heading": "Which of these religious observances lasts for the shortest period of time during the calendar year?",
+      "answers": [
+        {
+          "variant": "Ramadan",
+          "isCorrect": false
+        },
+        {
+          "variant": "Diwali",
+          "isCorrect": true
+        },
+        {
+          "variant": "Lent",
+          "isCorrect": false
+        },
+        {
+          "variant": "Hanukkah",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "heading": "Obstetrics is a branch of medicine particularly concerned with what?",
+      "answers": [
+        {
+          "variant": "Childbirth",
+          "isCorrect": true
+        },
+        {
+          "variant": "Broken bones",
+          "isCorrect": false
+        },
+        {
+          "variant": "Heart conditions",
+          "isCorrect": false
+        },
+        {
+          "variant": "Old age",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "heading": "In 1718, which pirate died in battle off the coast of what is now North Carolina?",
+      "answers": [
+        {
+          "variant": "Calico Jack",
+          "isCorrect": false
+        },
+        {
+          "variant": "Blackbeard",
+          "isCorrect": true
+        },
+        {
+          "variant": "Bartholomew Roberts",
+          "isCorrect": false
+        },
+        {
+          "variant": "Captain Kidd",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "heading": "What name is given to the revolving belt machinery in an airport that delivers checked luggage from the plane to baggage reclaim?",
+      "answers": [
+        {
+          "variant": "Hangar",
+          "isCorrect": false
+        },
+        {
+          "variant": "Terminal",
+          "isCorrect": false
+        },
+        {
+          "variant": "Concourse",
+          "isCorrect": false
+        },
+        {
+          "variant": "Carousel",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "heading": "Why i`m doing this?",
+      "answers": [
+        {
+          "variant": "Idk",
+          "isCorrect": false
+        },
+        {
+          "variant": "It`s funny",
+          "isCorrect": true
+        },
+        {
+          "variant": "Idk again",
+          "isCorrect": false
+        },
+        {
+          "variant": "It`s interesting",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "heading": "Hope u enjoy",
+      "answers": [
+        {
+          "variant": "Yep",
+          "isCorrect": true
+        },
+        {
+          "variant": "Absolutely",
+          "isCorrect": true
+        },
+        {
+          "variant": "No (dont click that!)",
+          "isCorrect": true
+        },
+        {
+          "variant": "I`m fine with that",
+          "isCorrect": true
+        }
+      ]
+    }
+  ],
+  "prices": [
+    500,
+    1000,
+    2000,
+    4000,
+    8000,
+    16000,
+    32000,
+    64000,
+    125000,
+    250000,
+    500000,
+    1000000
+  ]
+}
