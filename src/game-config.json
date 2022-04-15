@@ -236,7 +236,7 @@
       "answers": [
         {
           "variant": "Yep",
-          "isCorrect": true
+          "isCorrect": false
         },
         {
           "variant": "Absolutely",
@@ -244,11 +244,11 @@
         },
         {
           "variant": "No (dont click that!)",
-          "isCorrect": true
+          "isCorrect": false
         },
         {
           "variant": "I`m fine with that",
-          "isCorrect": true
+          "isCorrect": false
         }
       ]
     }

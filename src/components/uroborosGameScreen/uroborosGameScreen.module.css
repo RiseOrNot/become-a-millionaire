@@ -1,0 +1,90 @@
+.rootContainer {
+  height: 100vh;
+  background: linear-gradient(to right bottom, var(--white-100) 50%, var(--orange-5) 50%);
+  display: flex;
+}
+
+.rootContainer.white {
+  background: var(--white-100);
+}
+
+.contentWrapper {
+  display: flex;
+  margin: auto;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  padding: 0 2rem;
+}
+
+.contentWrapper > img {
+  width: 28.25rem;
+  height: 22.3125rem
+}
+
+.callToActionWrapper {
+  margin-top: 2.5rem;
+  width: max-content;
+  margin-left: 7.5rem;
+}
+
+.callToActionWrapper > h1 {
+  font-size: 3.5rem;
+  line-height: 116%;
+  margin-bottom: 4rem;
+  margin-top: 0;
+}
+
+.callToActionWrapper > span {
+  opacity: .5;
+  font-size: 2rem;
+  line-height: 116%;
+  margin-bottom: .5rem;
+  font-weight: 600;
+}
+
+@media all and (max-width: 768px) {
+  .contentWrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contentWrapper > img {
+    width: 22.25rem;
+    height: 18.3125rem
+  }
+
+  .callToActionWrapper {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .callToActionWrapper button {
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 550px) {
+  .contentWrapper {
+    height: 100%;
+    padding-top: 5rem;
+  }
+
+  .callToActionWrapper {
+    height: 40%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .callToActionWrapper > h1 {
+    font-size: 3rem;
+    line-height: 116%;
+    margin-bottom: 4rem;
+    margin-top: 0;
+  }
+
+  .callToActionWrapper button {
+    margin-top: auto;
+  }
+}

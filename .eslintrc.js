@@ -29,6 +29,7 @@ module.exports = {
   rules: {
     'linebreak-style': 'off',
     'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
+    'no-unused-expressions': ['error', { allowShortCircuit: true, allowTernary: true }],
     'no-console': 'error',
     'prettier/prettier': [
       'error',

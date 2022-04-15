@@ -1,5 +1,5 @@
 .button {
-  border-radius: 12px;
+  border-radius: 0.75rem;
   width: 18.5rem;
   height: 4rem;
   background-color: var(--orange-100);

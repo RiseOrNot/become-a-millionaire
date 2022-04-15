@@ -1,11 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+html {
+  font-size: var(--font-size);
+  --font-size: 10px;
+}
+
 body {
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   margin: 0;
   padding: 0;
   color: var(--black-100);
+  overflow: hidden;
 
   --orange-120: #E87928;
   --orange-100: #FF8B37;
@@ -20,10 +26,32 @@ body {
   --black-5: #F5F5F7;
   --white-100: #FFFFFF;
 
-  --font-size: 16px;
 }
 
 body * {
   font-family: 'Inter', sans-serif;
-  font-size: var(--font-size);
+}
+
+@media all and (min-width: 900px) {
+  html {
+    --font-size: 12px;
+  }
+}
+
+@media all and (min-width: 1240px) {
+  html {
+    --font-size: 16px;
+  }
+}
+
+@media all and (min-width: 2000px) {
+  html {
+    --font-size: 25px;
+  }
+}
+
+@media all and (min-width: 3000px) {
+  html {
+    --font-size: 35px;
+  }
 }

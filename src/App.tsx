@@ -1,15 +1,57 @@
-import handIcon from './assets/hand.svg';
-import Button from './ui-kit/button/button';
+import React, { useState } from 'react';
+import UroborosGameScreen, { StartGameScreenType } from './components/uroborosGameScreen/uroborosGameScreen';
+import GameScreen from './components/gameScreen/gameScreen';
+import gameConfig from './game-config.json';
+import { PricesType, QuestionsType } from './types/config.types';
+import { moneyFormatter } from './utils/formatting.utils';
 
-import s from './App.module.css';
-
-function App() {
-  return (
-    <div className={s.rootContainer}>
-      <img src={handIcon} alt={'Hand icon with stars'} />
-      <Button>Start</Button>
-    </div>
-  );
+export enum ScreenEnum {
+  START = 'start',
+  GAME = 'game',
+  END = 'end'
 }
+
+//TODO create tests for APP/Hexagon/UroborosGameScreen/GameScreen/BurgerButton
+
+const App: React.FC = () => {
+  const [screen, setScreen] = useState<ScreenEnum>(ScreenEnum.START);
+  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
+
+  const { questions, prices }: { questions: QuestionsType; prices: PricesType } = gameConfig;
+
+  const gameProps = {
+    ...questions[currentQuestionIndex],
+    prices,
+    currentQuestionIndex,
+    setters: {
+      setScreen,
+      updateQuestionIndex: (i = 1) => setCurrentQuestionIndex((current) => current + i)
+    }
+  };
+
+  const changeScreenToGame = () => {
+    setScreen(ScreenEnum.GAME);
+    setCurrentQuestionIndex(0);
+  };
+
+  const getCurrentScreen = () => {
+    switch (screen) {
+      case ScreenEnum.START:
+        return <UroborosGameScreen changeScreenToGame={changeScreenToGame} type={StartGameScreenType.START} />;
+      case ScreenEnum.GAME:
+        return <GameScreen {...gameProps} />;
+      case ScreenEnum.END:
+        return (
+          <UroborosGameScreen
+            changeScreenToGame={changeScreenToGame}
+            type={StartGameScreenType.END}
+            winAmount={moneyFormatter(prices[currentQuestionIndex] || 0)}
+          />
+        );
+    }
+  };
+
+  return <>{getCurrentScreen()}</>;
+};
 
 export default App;

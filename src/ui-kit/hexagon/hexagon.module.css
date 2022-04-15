@@ -1,0 +1,115 @@
+.hex {
+  position: relative;
+  width: fit-content;
+  height: var(--height);
+  display: flex;
+  box-sizing: border-box;
+  padding: 0 var(--paddings);
+  --height: calc(100vh / 24);
+  --fill: var(--white-100);
+  --stroke: var(--black-40);
+  --paddings: 1rem;
+}
+
+.hex:before {
+  position: absolute;
+  content: '';
+  left: 0;
+  right: 0;
+  height: 0.0625rem;
+  background-color: var(--stroke);
+  top: calc(50% - 0.03125rem);
+  z-index: -1;
+  transition: all .2s ease-in-out;
+}
+
+.hex * {
+  font-size: 1.25rem;
+  line-height: 116%;
+}
+
+.hex > span {
+  height: 100%;
+  width: calc(100% - var(--paddings) * 2);
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5625rem 1.5rem;
+  box-sizing: border-box;
+  color: var(--stroke);
+}
+
+.hex.next > span {
+  color: var(--black-100);
+}
+
+.hex.current {
+  --stroke: var(--orange-100)
+}
+
+.hex svg {
+  height: var(--height);
+  z-index: -1;
+}
+
+.hex.button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  --height: 4.5rem;
+}
+
+.button > span {
+  padding: 1.5rem 2rem;
+  justify-content: flex-start;
+  color: var(--black-100);
+}
+
+.button path {
+  transition: all .2s ease-in-out;
+}
+
+.button:hover {
+  --stroke: var(--orange-100);
+}
+
+.button.selected {
+  --stroke: var(--orange-100);
+  --fill: var(--orange-5);
+}
+
+.button.correct {
+  --stroke: var(--green-100);
+  --fill: var(--green-5);
+}
+
+.button.wrong {
+  --stroke: var(--red-100);
+  --fill: var(--red-5);
+}
+
+
+@media all and (max-width: 768px) {
+  .hex {
+    --height: calc(100vh / 16);
+  }
+
+  .hex.button {
+    --height: 6rem;
+    --paddings: 3rem;
+  }
+}
+
+@media all and (max-width: 475px) {
+  .hex.button {
+    --paddings: 2rem;
+  }
+}
+
+@media all and (max-width: 425px) {
+  .hex.button {
+    --height: 4.5rem;
+    --paddings: 2rem;
+  }
+}
