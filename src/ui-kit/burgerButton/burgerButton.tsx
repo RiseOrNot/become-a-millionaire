@@ -17,6 +17,7 @@ const BurgerButton: React.FC<BurgerButtonProps> = (props) => {
       className={`${s.burger} ${active ? s.active : ''} ${props.className || ''}`}
       onClick={handleClick}
       id={'burger'}
+      data-testId={'burger-button'}
     >
       <span />
       <span />

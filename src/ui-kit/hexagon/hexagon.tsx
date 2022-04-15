@@ -11,6 +11,7 @@ const Hexagon: React.FC<HexagonProps> = ({ onClick, text, buttonStatus = '', hex
     <Wrapper
       className={`${s.hex} ${isButton ? s.button : ''} ${s[buttonStatus]} ${s[hexStatus]}`}
       onClick={onClick}
+      data-testId={isButton ? 'button' : 'div'}
       {...rest}
     >
       <svg viewBox="0 0 373 72" fill="none" xmlns="http://www.w3.org/2000/svg">

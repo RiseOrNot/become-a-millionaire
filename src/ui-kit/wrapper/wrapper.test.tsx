@@ -7,6 +7,7 @@ describe('wrapper', () => {
 
     expect(screen.getByRole('button')).toBeVisible();
   });
+
   it('should return div element when onclick prop dont exist', () => {
     render(<Wrapper>Hello</Wrapper>);
 
