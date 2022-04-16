@@ -10,8 +10,7 @@
     "lint": "tsc --noEmit && eslint src/**/*.ts{,x}",
     "test": "jest --watch",
     "test:husky": "jest",
-    "test:cov": "jest --watch --coverage",
-    "prepare": "husky install"
+    "test:cov": "jest --watch --coverage"
   },
   "dependencies": {
     "react": "^18.0.0",
