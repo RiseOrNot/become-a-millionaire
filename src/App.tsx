@@ -14,7 +14,7 @@ export enum ScreenEnum {
 const App: React.FC = () => {
   const [screen, setScreen] = useState<ScreenEnum>(ScreenEnum.START);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
-  console.log('ke');
+
   const { questions, prices }: { questions: QuestionsType; prices: PricesType } = gameConfig;
 
   const gameProps = {

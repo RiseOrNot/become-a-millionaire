@@ -14,7 +14,7 @@ describe('uroborosGameScreen', () => {
     const onClick = jest.fn();
     render(<UroborosGameScreen changeScreenToGame={onClick} type={StartGameScreenType.START} />);
 
-    fireEvent.click(screen.getByText('Start'));
+    fireEvent.click(screen.getByText('Starts'));
     expect(onClick).toBeCalledTimes(1);
   });
 
