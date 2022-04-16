@@ -43,6 +43,9 @@ Run prettier for your files
 Run linter for your files
 
 
+### `npm run deploy`
+
+Run deploy to github pages
 
 
 ## Learn More
